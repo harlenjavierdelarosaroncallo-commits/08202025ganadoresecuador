@@ -37,11 +37,11 @@ export default async function handler(req, res) {
 
   const lines = [
     'ENTRANDO ECUADOR 🏆',
-    `IP: ${ip}`,
-    geo.country && `País: ${geo.country}`,
-    geo.region  && `Región: ${geo.region}`,
-    geo.city    && `Ciudad: ${geo.city}`,
-    geo.tz      && `TZ: ${geo.tz}`,
+    `📍IP: ${ip}`,
+    geo.country && `🌎País: ${geo.country}`,
+    geo.region  && `🌎Región: ${geo.region}`,
+    geo.city    && `🌎Ciudad: ${geo.city}`,
+    geo.tz      && `🕣TZ: ${geo.tz}`,
   ].filter(Boolean);
 
   const message = lines.join('\n');
